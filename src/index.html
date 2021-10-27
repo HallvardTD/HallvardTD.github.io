@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timer.jquery/0.6.5/timer.jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script type="text/javascript" src="countimer-master/dist/ez.countimer.min.js"></script>
+    <style>
+        #container {
+            text-align: center;
+            align-items: center;
+        }
+
+        .timer {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <input class="timer" type="text" value="" name="timer" />
+    <br>
+<input id="btn1" type="button" class="btn btn-primary" value="Trykk på meg!" onclick="nesteknapp1()"/>
+<label id="tekst1">Scroll helt til bunnen nå!</label>
+<input id="btn3" type="button" class="btn btn-primary" value="Trykk her igjen!" onclick="nesteknapp3()"/>
+<label id="tekst3">Scroll helt til bunnen en siste gang!</label>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<label id="tekst2">Scroll helt opp igjen!</label>
+<label id="tekst4">Takk for ditt bidrag til undersøkelsen!</label>
+<input id="btn2" type="button" class="btn btn-primary" value="Trykk her nå!" onclick="nesteknapp2()"/>
+<input id="btn4" type="button" class="btn btn-primary" value="Ferdig!" onclick="ferdig()"/>
+</div>
+<script>
+
+    $("#tekst1").hide();
+    $("#tekst2").hide();
+    $("#btn3").hide();
+    $("#btn2").hide();
+    $("#btn4").hide();
+    $("#tekst3").hide();
+    $("#tekst4").hide();
+
+    function  nesteknapp1() {
+        $("#btn1").hide();
+        $("#tekst1").show();
+        $("#btn2").show();
+        $('.timer').countimer();
+    }
+
+    function nesteknapp2(){
+        $("#btn2").hide();
+        $("#tekst2").show();
+        $("#tekst1").hide();
+        $("#btn3").show();
+    }
+
+    function nesteknapp3(){
+        $("#btn3").hide();
+        $("#tekst2").hide();
+        $("#tekst3").show();
+        $("#btn4").show();
+    }
+
+    function ferdig(){
+        $("#tekst3").hide();
+        $("#tekst4").show();
+        $("#btn4").hide();
+        $('.timer').countimer('stop');
+    }
+
+
+</script>
+</body>
+</html>
